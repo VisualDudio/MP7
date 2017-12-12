@@ -43,12 +43,12 @@ public class ControllableRobotGraphics extends JFrame implements KeyListener, Ac
 	    count = 0;
 	    do {
     		if (!(r instanceof ControllableRobot)) {
-    			r.move(maze);
-    			currentX = r.getRobotPos()[0];
-    			currentY = r.getRobotPos()[1];
-    			count++;
+    		    r.move(maze);
+    		    currentX = r.getRobotPos()[0];
+    		    currentY = r.getRobotPos()[1];
+    		    count++;
     		} else {
-    			r.setPos(currentX, currentY);
+    		    r.setPos(currentX, currentY);
     		}
     		
 	        for (int row = 0; row < maze1.length; row++) {
@@ -57,15 +57,15 @@ public class ControllableRobotGraphics extends JFrame implements KeyListener, Ac
 	                    character.setLocation(10 + (col * 17), 10 + (row * 17));
 	                    add(character);
 	                } else if (!maze1[row][col]) {
-                		JLabel wall = new JLabel(marioWall);
-                		wall.setSize(new Dimension(16, 16));
-                		wall.setLocation(10 + (col * 17), 10 + (row * 17));
-                		add(wall);
+                	    JLabel wall = new JLabel(marioWall);
+                	    wall.setSize(new Dimension(16, 16));
+                	    wall.setLocation(10 + (col * 17), 10 + (row * 17));
+                	    add(wall);
 	                } else {
-                		JLabel space = new JLabel(marioSpace);
-                		space.setSize(new Dimension(16, 16));
-                		space.setLocation(10 + (col * 17), 10 + (row * 17));
-                		add(space);
+                	    JLabel space = new JLabel(marioSpace);
+                	    space.setSize(new Dimension(16, 16));
+                	    space.setLocation(10 + (col * 17), 10 + (row * 17));
+                	    add(space);
 	                }
 	            }
 	        }
