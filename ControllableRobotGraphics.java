@@ -3,8 +3,8 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class ControllableRobotGraphics extends JFrame implements KeyListener, ActionListener {
-	private ImageIcon marioWall;
-	private ImageIcon marioSpace;
+    private ImageIcon marioWall;
+    private ImageIcon marioSpace;
     private JLabel character;
     private JLabel numMoves; 
     private JLabel counter;
