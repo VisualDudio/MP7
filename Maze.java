@@ -1,29 +1,23 @@
-
-public class Maze
-{
-    public Maze(boolean [][]maze, int startX, int startY)
-    {
+public class Maze {    
+    private boolean[][] maze;
+    private int startX;
+    private int startY;
+    
+    public Maze(boolean[][] maze, int startX, int startY) {
        this.maze = maze; 
        this.startX = startX; 
        this.startY = startY;
     }
     
-    public boolean[][] getMaze()
-    {
+    public boolean[][] getMaze() {
        return maze; 
     }
     
-    public int getStartX()
-    {
+    public int getStartX() {
         return startX;
     }
     
-    public int getStartY()
-    {
+    public int getStartY() {
         return startY;
     }
-    
-    private boolean[][] maze;
-    private int startX;
-    private int startY;
 }
